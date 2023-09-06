@@ -7,7 +7,7 @@ body{
   height:100vh;
   width:100%;
   background-color: rgb(23, 22, 29);
-  
+  color:red;
   
 }
 .nav_container{
@@ -19,18 +19,17 @@ body{
   font-size:.7em;
   display:flex;
   align-items: center;
+  position:fixed;
 
   
 }
-.name{
-  margin-left:10px;
-}
+
 img{
   border-radius:50%;
   height:40px;
   width:40px;
   margin-left:10px;
- 
+  margin-right: 10px;
 }
 #links{
   font-size: 2em;
@@ -65,13 +64,37 @@ a{
   
 }
 .border_bottom{
-  padding-bottom:8px;
+padding-bottom:8px;
+height:100%;
   border-bottom:4px solid blue;
+  
 }
-h2,h3,p{
-  margin-left:199px;
-  margin-right:199px;
-  text-align: left;
+.left_nav{
+  height:100vh;
+  width:199px;
+ display:flex;
+ flex-direction: column;
+ align-items: center;
+  background-color: rgb(39, 35, 59);
+  border-right:1px solid white;
+ 
+}
+.left{
+  height:50px;
+  width:100%;
+  text-align: center;
   color:white;
+  border:1px solid white;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+.left:nth-last-of-type(6){
+  margin-top: 100px;
+}
+section{
+  position:absolute;
+  top:50%;
+  left:50%;
 }
 
