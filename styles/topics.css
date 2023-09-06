@@ -1,16 +1,17 @@
 body{
-  background-color:black;
+  background-color: rgb(23, 22, 29);
   margin:0;
   padding:0;
 }
 .main_container{
-  height:100vh;
+  height:100%;
   width:100%;
   background-color: rgb(23, 22, 29);
   color:rgb(233, 217, 217);
   
 }
 .nav_container{
+  z-index:1;
   height:7vh;
   width:100%;
   background-color: black;
@@ -27,7 +28,7 @@ p{
   color:antiquewhite
 }
 
-img{
+.profile{
   border-radius:50%;
   height:40px;
   width:40px;
@@ -73,8 +74,10 @@ height:100%;
   
 }
 .left_nav{
+  position:fixed;
   height:100vh;
   width:199px;
+  display:absolute;
  display:flex;
  flex-direction: column;
  align-items: center;
@@ -104,5 +107,11 @@ section{
   top:60px;
   left:300px;
   right:50px;
+}
+.image1{
+  height:20vh;
+  width:50vw;
+  margin:10px auto;
+  
 }
 
