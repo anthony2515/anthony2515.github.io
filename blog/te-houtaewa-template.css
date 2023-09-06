@@ -7,7 +7,9 @@ body{
   height:100vh;
   width:100%;
   background-color: rgb(23, 22, 29);
-  color:rgb(233, 217, 217);
+  color:red;
+  
+
   
 }
 .nav_container{
@@ -22,9 +24,6 @@ body{
   position:fixed;
 
   
-}
-p{
-  color:antiquewhite
 }
 
 img{
@@ -81,6 +80,7 @@ height:100%;
  justify-content: center;
   background-color: rgb(39, 35, 59);
   border-right:1px solid white;
+  
  
 }
 .left{
@@ -101,8 +101,6 @@ cursor:pointer;
 
 section{
   position:absolute;
-  top:60px;
-  left:300px;
-  right:50px;
+  top:50%;
+  left:50%;
 }
-
