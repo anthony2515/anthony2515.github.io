@@ -1,78 +1,69 @@
-body{
-  background-color:black;
-  margin:0;
-  padding:0;
+:root {
+  --blue: rgb(83, 112, 206);
 }
-.main_container{
-  height:100vh;
-  width:100%;
-  background-color: rgb(23, 22, 29);
-  color:antiquewhite;
-  text-align:center;
-  
-}
-.nav_container{
-  height:7vh;
-  width:100%;
-  background-color: black;
-  color:azure;
-  font-family: 'Roboto','sans-serif';
-  font-size:.7em;
-  display:flex;
+body {
+  height: 100%;
+  background-color: white;
+  font-family: 'roboto', 'sans-serif';
+  background-image: linear-gradient(
+    180deg,
+    rgb(137, 151, 192),
+    rgba(158, 158, 158, 0.5)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-
-  
-}
-.name{
-  margin-left:10px;
-}
-img{
-  border-radius:50%;
-  height:40px;
-  width:40px;
-  margin-left:10px;
- 
-}
-#links{
-  font-size: 2em;
-  margin:0 auto;
-  color: white;
-  position:absolute;
-  
-  
-  left: 50%;
-  transform: translate(-50%);
-}
-.topics{
-  margin-left:1px;
-  
+  font-size: calc(2em + (1) * ((100vw - 300px) / (1300 - 300)));
 }
 
-.home{
-  margin-left: 1px;
+.intro {
+  margin-top: 10vh;
+  height: 100vh;
 }
-a{
-  text-decoration:none;
-  color:white;
+h4 {
+  color: var(--blue);
 }
-.toggle{
-  padding:7px;
+h1,
+h3,
+h4,
+a {
+  font-family: 'Seymour One', sans-serif;
 }
-.toggle:hover{
-  background:rgb(60, 60, 63);
-  padding:6px;
-  border-radius:10px;
-  border:1px solid gray;
-  
+.name {
+  color: rgb(63, 62, 62);
 }
-.border_bottom{
-  padding-bottom:8px;
-  border-bottom:4px solid blue;
+.whoami {
+  text-align: center;
+  height: 100vh;
 }
-h2,h3,p{
-  margin-left:199px;
-  margin-right:199px;
+.contents_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paragraph {
   text-align: left;
-  color:white;
+  margin: 10px 300px;
+}
+.link_container {
+  display: flex;
+  height: 20vh;
+  width: 65vw;
+  justify-content: space-between;
 }
 
+.link {
+  height: 30vh;
+  width: 30vh;
+  border-radius: 5px;
+  border: 1px solid rgb(104, 102, 102);
+}
+a {
+  text-decoration: none;
+  color: var(--blue);
+
+  text-align: center;
+}
