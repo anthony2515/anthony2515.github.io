@@ -124,6 +124,15 @@ a {
     flex-direction: column;
     align-items: center;
   }
+  footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:4vh;
+    width:100vw;
+    background-color:rgba(112, 33, 33, 0.5)
+    
+  }
 }
 @media (max-width:412px){
   body {
