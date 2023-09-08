@@ -1,0 +1,24 @@
+body {
+  height: 100%;
+  background-color: white;
+  font-family: 'roboto', 'sans-serif';
+  background-image: linear-gradient(
+    180deg,
+    rgb(137, 151, 192),
+    rgba(158, 158, 158, 0.5)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(2em + (1) * ((100vw - 300px) / (1300 - 300)));
+}
+@media (max-width:1430px){
+.demo{
+  width:100%;
+}
+}
+@media (max-width:412px){
+
+}
