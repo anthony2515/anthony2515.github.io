@@ -22,6 +22,7 @@ body {
 .intro {
   margin-top: 10vh;
   height: 100vh;
+  
 }
 h4 {
   color: var(--blue);
@@ -111,5 +112,9 @@ a {
   .link{
     font-size: .6em;
   }
-  
+  .intro {
+    margin-top: 10vh;
+    height: 100vh;
+    text-align: center;
+  }
 }
