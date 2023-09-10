@@ -34,6 +34,44 @@
     transform: translateY(0);
     transition: .2s ease;
   }
+  @media (max-width: 1100px) {
+  .main_container {
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    margin:0;
+  }
+  .intro {order:1;
+    position: static;
+    margin: 50px auto;
+    text-align: center;
+    
+    width:80vw;
+  }
+  .contents_container {
+    order: 3;
+   
+    position: relative;
+    margin: 400px auto;
+    height:50vh;
+    width:100vw;
+   
+    
+  }
+  .whoami {
+    
+    font-size: .9em;
+    order: 2;
+    overflow: scroll;
+    overflow-x:hidden;
+    width:70vw;
+    margin: -150px auto;
+    padding: 50px;
+   
+  }
+  
+}
   </style>
 </head>
 
@@ -45,19 +83,21 @@
       
       <div class="contact">Contact Me</div>
       
-  </nav>
-  <div class = "contents_container">
-    <div class = "contents te"><a href="te-houtaewa-template.html">Te-houtaewa</a></div>
-    <div class = "contents te"><a href="flexbox.html">FlexBox</a></div>
-    <div class = "contents te"><a href="identity-values-strength.html">Identity, Values and Strength</a></div>
-    <div class = "contents te"><a href="learning-plan.html">Learning Plan</a></div>
-    <div class = "contents te"><a href="#">...</a></div>
-  </div>
-  <div class="intro">
-    <h1>Hi There,</h1>
-    <h1>I'm Anthony <span class = "lastname">Santiago</span></h1>
-    <h4>Future <span class = "developer">Web Developer</span></h4>
-  </div>
+  </nav><div class="main_container">
+    <div class="intro">
+      <h1>Hi There,</h1>
+      <h1>I'm Anthony <span class = "lastname">Santiago</span></h1>
+      <h4>Future <span class = "developer">Web Developer</span></h4>
+    </div>
+    
+      <div class = "contents_container">
+        <!--    <div class = "contents"><a href="blog/te-houtaewa-template.html">Te-houtaewa</a></div>-->
+        <div class = "contents te">Te-houtaewa</div>
+        <div class = "contents te">FlexBox</div>
+        <div class = "contents te">Identity, Values and Strength</div>
+        <div class = "contents te">Learning Plan</div>
+        <div class = "contents te">...</div>
+      </div>
   <div class="whoami">
     <h3>Explain a situation where you have made an ethical decision. Discuss how you weighed up the values involved in that decision, the decision you made, and how you reflect on the decision now.</h3>
     <p>-<em>I think I made a decision to quit my previous job because I dont see myself to work any longer as Im always thinking about pursuing being a programmer one day. So right now I think that decision that I made will gonna change my life because this is the thing that I really wanted to do to have my time to learn more in web development and apply those knowledge at work.

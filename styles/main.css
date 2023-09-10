@@ -43,20 +43,18 @@ nav:hover {
   align-items: center;
   right: 200px;
 }
-.move{
+.move {
   transform: translateY(-200px);
-  transition: .2s ease;
-  
-  
+  transition: 0.2s ease;
 }
-.move_back{
+.move_back {
   transform: translateY(200px);
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
-.move_intro{
+.move_intro {
   opacity: 0;
-  transform:translateY(-200px);
-  transition:.1s ease;
+  transform: translateY(-200px);
+  transition: 0.1s ease;
 }
 
 .contents_container {
@@ -69,7 +67,6 @@ nav:hover {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  
 }
 .contents {
   height: 7vh;
@@ -119,15 +116,15 @@ nav:hover {
   position: absolute;
   top: 25vh;
   left: 100vh;
-  
-  width: 700px;
+
+  width: 40vw;
   height: 300px;
 }
-.whoami_move{
+.whoami_move {
   top: 10vh;
   left: 70vh;
-  opacity:0;
-  transition:.2s;
+  opacity: 0;
+  transition: 0.2s;
 }
 h2 {
   font-size: 1em;
@@ -144,24 +141,84 @@ h2 {
 .contact {
   cursor: pointer;
 }
-.contents:nth-last-of-type(3){
+.contents:nth-last-of-type(3) {
   height: 8vh;
   width: 200px;
-  display:flex;
+  display: flex;
   align-items: flex-start;
   justify-content: center;
   text-align: center;
 
   overflow: hidden;
-  transition: .5s ease;
-  
+  transition: 0.5s ease;
 }
-.contents:nth-last-of-type(3):hover{
+.contents:nth-last-of-type(3):hover {
   height: 8vh;
   width: 300px;
-   overflow: hidden;
+  overflow: hidden;
 }
-a{
+a {
   text-decoration: none;
-  color:black;
+  color: black;
+}
+
+@media (max-width: 1100px) {
+  .main_container {
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    margin:0;
+  }
+  .intro {order:1;
+    position: static;
+    margin: 50px auto;
+    text-align: center;
+    
+    width:80vw;
+  }
+  .contents_container {
+    order: 3;
+   
+    position: relative;
+    margin: 10px auto;
+    height:50vh;
+    width:100vw;
+   
+    
+  }
+  .whoami {
+   
+    font-size: .8em;
+    order: 2;
+    position:static;
+    width:70vw;
+    margin: 0 auto;
+    
+  }
+  
+}
+@media (max-width:800px){
+  .whoami{
+    
+    overflow-x: hidden;
+  }
+  .name{
+    opacity: 0;
+  }
+  .contact{
+    margin-left:15px;
+    width:100px;
+  }
+}
+@media (max-width: 998px) {
+  .intro {
+    position: static;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 1em;
+    width:80vw;
+  }
+  
+
 }
