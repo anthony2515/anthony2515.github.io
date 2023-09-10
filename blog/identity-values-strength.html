@@ -5,12 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/main.css">
   <title>Document</title>
+  <style>
+    .whoami_move_back{
+      opacity: 0;
+     transform:translate(200px,200px);
+     
+    transition:.2s;
+    }
+    .intro{
+      transform: translateY(-300px);
+    }
+    .move_intro_back{
+   
+    transform:translateY(0px);
+    transition:.1s ease;
+  }
+    .contents_container{
+      transform:translateY(-200px);
+    }
+    .whoami{
+      top: 10vh;
+    left: 70vh;
+    
+    width: 700px;
+    height: 300px;
+    }
+    .move_back{
+    transform: translateY(0);
+    transition: .2s ease;
+  }
+  </style>
 </head>
+
 <body>
   <nav>
     <div class = "name"><h1>@anthony</h1></div>
     <div class = "tabs_container">
-      <div class = "home"><a href="../index.html">Home</a></div>
+      <div class = "home">Home</div>
       
       <div class="contact">Contact Me</div>
       
@@ -47,6 +78,6 @@
   <p><em>- If i felt there is a resistance or tension at the workplace. First I will observe whats going on, ask them what is the problem. What is their opinion to solve that problem and share my thoughts how to fix it.
     - Sometimes I need to think if i did something wrong causing that situation </em></p>
   </div>
-  
+  <script src="app.js"></script>
 </body>
 </html>

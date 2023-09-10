@@ -43,15 +43,33 @@ nav:hover {
   align-items: center;
   right: 200px;
 }
+.move{
+  transform: translateY(-200px);
+  transition: .2s ease;
+  
+  
+}
+.move_back{
+  transform: translateY(200px);
+  transition: .2s ease;
+}
+.move_intro{
+  opacity: 0;
+  transform:translateY(-200px);
+  transition:.1s ease;
+}
+
 .contents_container {
   height: 100vh;
   width: 30vh;
+
   position: fixed;
   margin-left: 100px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  
 }
 .contents {
   height: 7vh;
@@ -101,9 +119,15 @@ nav:hover {
   position: absolute;
   top: 25vh;
   left: 100vh;
-
+  
   width: 700px;
   height: 300px;
+}
+.whoami_move{
+  top: 10vh;
+  left: 70vh;
+  opacity:0;
+  transition:.2s;
 }
 h2 {
   font-size: 1em;

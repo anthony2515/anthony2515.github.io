@@ -5,12 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/main.css">
   <title>Document</title>
+  <style>
+    .whoami_move_back{
+      opacity: 0;
+     transform:translate(400px,400px);
+     
+    transition:.2s;
+    }
+    .intro{
+      transform: translateY(-300px);
+    }
+    .move_intro_back{
+   
+    transform:translateY(0px);
+    transition:.1s ease;
+  }
+    .contents_container{
+      transform:translateY(-200px);
+    }
+    .whoami{
+      top: 10vh;
+    left: 70vh;
+    
+    width: 700px;
+    height: 300px;
+    }
+    .move_back{
+    transform: translateY(0);
+    transition: .2s ease;
+  }
+  </style>
 </head>
 <body>
   <nav>
     <div class = "name"><h1>@anthony</h1></div>
     <div class = "tabs_container">
-      <div class = "home"><a href="../index.html">Home</a></div>
+      <div class = "home">Home</div>
       
       <div class="contact">Contact Me</div>
       
@@ -64,6 +94,6 @@
       <h3>Any scheduling information such as block-out times when you are committed to other things. For example, you might have whānau commitments like school drop-offs. It's important to plan these in.</h3>
       <p>-not that i know of because I prepared myself to take all my time for this bootcamp</p>
     </div>
-  
+  <script src="app.js"></script>
 </body>
 </html>
