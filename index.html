@@ -3,43 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/mediaqueries.css" />
   <title>Document</title>
 </head>
 <body>
-  <nav>
-    <div class = "name"><h1>@anthony</h1></div>
-    <div class = "tabs_container">
-      <div class="home" style="pointer-events: none;" >Home</div>
+  <nav id = "desktop-nav">
+    <div class = "logo">Anthony Santiago</div>
+    <div class="nav-links">
+      <a href="#top">Home</a>
+      <a href="#about">About</a>
+      <a href="#reflections">Reflections</a>
       
-      <div class="contact">Contact Me</div>
+    </div>
+  </nav>
+  <nav id = "hamburger-nav">
+    <div class = "logo">Anthony Santiago</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
- </nav>
-  <div class="main_container">
-    <div class="intro">
-      <h1>Hi There,</h1>
-      <h1>I'm Anthony <span class = "lastname">Santiago</span></h1>
-      <h4>Future <span class = "developer">Web Developer</span></h4>
+      <div class="menu-links">
+        <ul><li><a href="#top">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#reflections" onclick="toggleMenu()">Reflections</a></li>
+      </ul>
+      </div>
     </div>
   
-    <div class = "contents_container">
-      <!--    <div class = "contents"><a href="blog/te-houtaewa-template.html">Te-houtaewa</a></div>-->
-      <div class = "contents">Te-houtaewa</div>
-      <div class = "contents">FlexBox</div>
-      <div class = "contents">Identity, Values and Strength</div>
-      <div class = "contents">Learning Plan</div>
-      <div class = "contents">...</div>
-    
-    </div>
-    <div class="whoami">
+  </nav>
+  <div class = "section_text">
+    <p class="section_text_p1">Hello, I'm</p>
+    <h1 class="title">Anthony Santiago</h1>
+    <p class="section_text_p2">Future Developer</p>
+  </div>
+ <section id = "about">
       <h1 style="text-align: center; font-family: sans-serif;">About Me</h1>
-      <h2>I was born in Philippines and I'm currently living here in Masterton.</h2>
-      <h2>I got my values and identity on my past experiences on variety of jobs that I've been.</h2>
-      <h2>I used to be a cleaner, a factory worker on some sort of fields(Wood Manufacturing, Mushroom Production, Premiere Beehive) and being a dairy farmer for 2 years. I have learned a lot of things on those environments and working with different kind of people.This past experience builts up my personality and knowledge to overcome bad situations.
-      </h2>
-    </div>
+      <p>I was born in Philippines and I'm currently living here in Masterton.</p>
+      <p>I got my values and identity on my past experiences on variety of jobs that I've been.</p>
+      <p>I used to be a cleaner, a factory worker on some sort of fields(Wood Manufacturing, Mushroom Production, Premiere Beehive) and being a dairy farmer for 2 years. I have learned a lot of things on those environments and working with different kind of people.This past experience builts up my personality and knowledge to overcome bad situations.
+      </p>
+ </section> 
+ <section id = "reflections">
+  <h1>Reflections</h1>
+  <div class="reflection_container">
+    <a href="blog/te-houtaewa-template.html"><div class = "reflection"><span>Te Houtaewa</span></div></a>
+    <a href="blog/flexbox.html"><div class = "reflection"><span>Flex Box</span></div></a>
+    <a href="blog/identity-values-strength.html"><div class = "reflection"><span style="line-height: 2em;">Identity, Values and Strength</span></div></a>
+    <a href="blog/learning-plan.html"><div class = "reflection"><span>Learning Plan</span></div></a>
   </div>
   
+ </section>
   <script src="blog/app.js"></script>
 </body>
 </html>

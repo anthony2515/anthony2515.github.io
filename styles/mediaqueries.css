@@ -1,0 +1,13 @@
+@media (max-width:1200px) {
+  #desktop-nav{
+    position:fixed;
+    display:none;
+  }
+  #hamburger-nav{
+    display:flex;
+    justify-content: space-around;
+    position:fixed;
+    width:100%;
+    background-color: white;
+  }
+}

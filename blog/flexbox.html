@@ -5,101 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/main.css">
   <title>Document</title>
-  <style>
-    .whoami_move_back{
-      opacity: 0;
-     transform:translate(200px,200px);
-     
-    transition:.2s;
-    }
-    .intro{
-      transform: translateY(-300px);
-    }
-    .move_intro_back{
-   
-    transform:translateY(0px);
-    transition:.1s ease;
-  }
-    .contents_container{
-      transform:translateY(-200px);
-    }
-    .whoami{
-      top: 10vh;
-    left: 70vh;
-    
-    width: 700px;
-    height: 300px;
-    }
-    .move_back{
-    transform: translateY(0);
-    transition: .2s ease;
-  }
-  @media (max-width: 1100px) {
-  .main_container {
-    display: flex;
-    flex-direction: column;
-  }
-  nav {
-    margin:0;
-  }
-  .intro {order:1;
-    position: static;
-    margin: 50px auto;
-    text-align: center;
-    
-    width:80vw;
-  }
-  .contents_container {
-    order: 3;
-   
-    position: relative;
-    margin: 400px auto;
-    height:50vh;
-    width:100vw;
-   
-    
-  }
-  .whoami {
-    
-    font-size: .9em;
-    order: 2;
-    overflow: scroll;
-    
-    width:70vw;
-    margin: -150px auto;
-    padding: 50px;
-   
-  }
   
-}
-  </style>
 </head>
 <body>
-  <nav>
-    <div class = "name"><h1>@anthony</h1></div>
-    <div class = "tabs_container">
-      <div class = "home">Home</div>
-      
-      <div class="contact">Contact Me</div>
-      
-  </nav><div class="main_container">
-    <div class="intro">
-      <h1>Hi There,</h1>
-      <h1>I'm Anthony <span class = "lastname">Santiago</span></h1>
-      <h4>Future <span class = "developer">Web Developer</span></h4>
-    </div>
-    
-      <div class = "contents_container">
-        <!--    <div class = "contents"><a href="blog/te-houtaewa-template.html">Te-houtaewa</a></div>-->
-        <div class = "contents te">Te-houtaewa</div>
-        <div class = "contents te">FlexBox</div>
-        <div class = "contents te">Identity, Values and Strength</div>
-        <div class = "contents te">Learning Plan</div>
-        <div class = "contents te">...</div>
-      </div>
-      
-      
-  <div class="whoami">
+
     <h1>What is flex box?</h1>
   <p>Flex box is a container where you can align the contents inside of it using various properties like:</p>
   <ul>
@@ -151,7 +60,6 @@
   <p>we set justify-content:flex-end to move the contents to the end of the main axis</p>
   <p> and we set align-items:flex-end to move the contents to the end of the <strong>cross-axis</strong></p>
   <img class = "demo" src = "../image/image6.png"></div>
-</div>
-  <script src="app.js"></script>
+
 </body>
 </html>
