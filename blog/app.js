@@ -221,3 +221,11 @@ learning[3].addEventListener('click', function() {
 
 */
 
+const myElement = document.querySelector('.te');
+if (myElement) { // Check if the element exists
+  myElement.addEventListener('click', function() {
+    // Your event handling code here
+  });
+} else {
+  console.log('Element not found.');
+}

@@ -36,42 +36,36 @@
   transition: .2s ease;
 }
 @media (max-width: 1100px) {
-  .main_container {
-    display: flex;
-    flex-direction: column;
-  }
-  nav {
-    margin:0;
-  }
-  .intro {order:1;
-    position: static;
-    margin: 50px auto;
-    text-align: center;
-    
-    width:80vw;
-  }
-  .contents_container {
-    order: 3;
-   
-    position: relative;
-    margin: 400px auto;
-    height:50vh;
-    width:100vw;
-   
-    
-  }
-  .whoami {
-    
-    font-size: .9em;
-    order: 2;
-    overflow: scroll;
-    overflow-x:hidden;
-    width:70vw;
-    margin: -150px auto;
-    padding: 50px;
-   
-  }
+ .main_container{
+  display:flex;
+  flex-direction: column;
+
+  width:100%;
   
+ }
+ .whoami{
+  position:static;
+  margin-top:-100px;
+  
+ }
+ .contents_container{
+  margin-top:300px;
+ }
+  
+  
+}
+@media (max-width:800px){
+  .whoami{
+    
+    width:70%;
+  }
+  .name{
+    opacity: 0;
+  }
+  .contact{
+    margin-left:15px;
+    width:100px;
+  }
 }
 </style>
 <body>
@@ -98,7 +92,7 @@
         <div class = "contents te">Learning Plan</div>
         <div class = "contents te">...</div>
       </div>
-  </div>
+ 
   <div class="whoami">
     <h1 class="heading" 
         style="color:rgb(25, 105, 172);
@@ -115,7 +109,8 @@
     <p>
       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWhile Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately recognised.
     </p>
-    </div>
+  </div>
+</div>  
   <script src = "app.js"></script>
 </body>
 </html>
