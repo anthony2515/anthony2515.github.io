@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <style>
+    h1 {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      padding-top: 10px;
+      text-align: center;
+    }
+    p {
+      line-height: 40px;
+      margin: 0 100px;
+      font-size: 2em;
+    }
+    .list {
+      list-style-position: inside;
+      list-style-type: none;
+      margin: 0 100px;
+      font-size: 1.5em;
+    }
+    .if {
+      color: blue;
+    }
+    
+    img{
+      border-radius: 20px;
+      height: 50vh;
+      width:50vw;
+
+    }
+    div{
+      display: flex;
+      justify-content: center;
+      
+      height: 60vh;
+      width:100%
+    }
+  </style>
+  <body>
+    <h1>Welcome to Javascript Fundamentals</h1>
+    <p>
+      Javascript is a high level language like Java,C++, Python, etc. It has the
+      same work flow and programming logic but different syntax from the other
+      languages.
+    </p>
+    <br />
+    <p>
+      It is easier to use Javascript among the others in terms of defining a
+      variable because in Javascript we only use 3 variable identifier keywords
+      which are <strong>var, let and const </strong>compared to other
+      programming language like C++,Java or C, you need to define it in
+      different terms like <strong>int</strong> for integer,<strong
+        >float</strong
+      >
+      for floating numbers or numbers with decimal values,
+      <strong>char</strong> for character values and many more. However, those 3
+      languages are good on their own when it comes on developing systems
+    </p>
+    <h1>Defining Variables</h1>
+    <p>
+      Defining variables in Javascript is easier using
+      <strong>let,var, const</strong> but this three have different purposes on
+      declaring values.
+    </p>
+    <br />
+    <ul class="list">
+      <li>
+        <strong>var keyword</strong>
+        <ul>
+          <li>
+            are function-scoped or globally scoped, depending on where they are
+            declared.
+          </li>
+          <li>
+            This means they are accessible throughout the entire function or in
+            the global scope if declared outside of any function.
+          </li>
+        </ul>
+      </li>
+      <li><strong>let keyword</strong></li>
+      <ul>
+        <li>
+          are block-scoped. They are only accessible within the block (enclosed
+          by curly braces) in which they are defined.
+        </li>
+        <li>
+          Block scope includes loops, conditional statements, and any other code
+          blocks.
+        </li>
+      </ul>
+      <li><strong>const keyword</strong></li>
+      <ul>
+        <li>are intended to hold constant or immutable values.</li>
+        <li>
+          Once you assign a value to a const variable, you cannot reassign it to
+          a different value.
+        </li>
+      </ul>
+    </ul>
+    <h1>Analogy</h1>
+    <p>
+      On my previous reflection about html and css, <strong>HTML</strong> is
+      like the skeleton of the website where you put what elements are needed in
+      your page and <strong>CSS</strong> gives colors,size and design.
+    </p>
+    <br />
+    <p>
+      Javascript is the one that gives functionality on those elements.
+      Manipulate those elements, for example if you clicked a button, you want
+      to use javascript to give functionality to it.
+    </p>
+    <br />
+    <h1>Control Flow</h1>
+    <p>
+      <strong>Control Flow</strong> is a fundamental concept in programming that
+      refers to the order in which statements and instructions are executed in a
+      program. So basically, when we break down the word control and flow,
+      control means you can control whatever instruction you tell to the
+      computer and flow is like the flow of your instruction in order for the
+      computer to understand what you are saying to it. So we have different
+      ways to use control flow for the computer to understand what we wanna tell
+      them. And those control flows are:
+    </p>
+    <br />
+    <ul style="margin-left: 40vw; font-size: 2em">
+      <li>Condition Statements</li>
+      <li>Loops</li>
+      <li>Function Calls</li>
+    </ul>
+    <h1>Condition Statements</h1>
+    <p>
+      This work flow let you tell the computer to make a condition for example
+      you wanna say "Hey computer I want you to translate the word Hello in
+      different languages if the language is Filipino please say "Kamusta" else
+      if the language is Chinese say "Ni hao" else if the language is Samoan say
+      "Talofa" "
+    </p>
+    <br />
+    <p>
+      So in order for the computer to understand what you are trying to tell you
+      need to execute a code like this:
+    </p>
+    <br />
+    <p>
+      <span class="if">if</span>(word=='Filipino') <br />
+      <p>{</p>
+      <br />
+      <p>say('Kamusta')</p>
+      <br />
+      <p>}</p>
+      <br />
+      <p><span class="if">else if</span>(word=='Chinese')</p>
+      <br />
+      <p>{</p>
+      <br />
+      <p>say('Ni Hao')</p>
+      <br />
+      <p>}</p>
+      <br />
+      <p><span class="if">else if</span>(word=='Samoan'){</p>
+      <br />
+      <p>say('Talofa')</p>
+      <br />
+      <p>}</p>
+    </p>
+
+    <h1>Loops</h1>
+    <p>
+      This control flow makes the computer to loop around the instruction, I
+      will discuss this further after. So basically if you want the computer to
+      count from 1 to five, you might tell it this way "computer say 1, say 2,
+      say 3, say 4, say 5". When you execute this in code:
+    </p>
+    <br />
+    <p>say(1)</p>
+    <p>say(2)</p>
+    <p>say(3)</p>
+    <p>say(4)</p>
+    <p>say(5)</p>
+    <br />
+    <p>
+      However what if you want the computer to count 1 to 100? or even a
+      million? You dont really wanna waste your time typing each function from
+      say(1) to say(1000000). So how are you going to do it?
+    </p>
+    <p>In that situation we will use a <strong>Loop:</strong></p>
+    <br />
+    <p style="text-align: center;">this image shows telling the computer to say 1 to 10</p>
+    <div><img src="../image/loop.png" alt="loop image"></div>
+    <p>to have a better understanding please look at the flowchart below to see how we simulate the loop</p>
+    <div><img src="../image/loop flowchart.png" alt="loop image"></div>
+    <p>On the flowchart, it shows how the statements loops around and the loop will end if the value of x is less than or equal to 10. So basically when value of x exceeds to 10 the loop will stop</p>
+    <h1>DOM(Document Object Model)</h1>
+    <div><img src="../image/DOM.png" style = "height:70vh;width:90vw"  alt="DOM"></div>
+    <p>The DOM or Document Object Model, is a programming interface for web documents.</p>
+    <br>
+    <p> It represents the page so that programs can change the document structure, style, and content dynamically.The DOM is a way for programs (typically written in JavaScript) to interact with web pages and make them dynamic and interactive.</p>
+    <br>
+    <h1>Array</h1>
+    <p>Array is a collection of data under the variable name and data are stored in sequential order by index</p>
+    <div><img src="../image/array.png" alt="loop image"></div>
+    <h1>Object</h1>
+    <p></p>
+  </body>
+</html>
+
