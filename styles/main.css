@@ -147,6 +147,8 @@ h1{
   height:100vh;
   display:flex;
   justify-content: center;
+  flex-wrap: wrap;
+background-color: red;
 }
 .reflection{
   display:flex;
