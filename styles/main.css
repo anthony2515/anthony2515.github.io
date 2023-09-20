@@ -135,7 +135,7 @@ a:hover{
 h1{
   margin-bottom: 6vh;
 }
-#reflections{
+#reflections,#portfolio{
   padding-top:20vh;
   
   height: 100vh;
@@ -150,6 +150,7 @@ h1{
   flex-wrap: wrap;
 
 }
+
 .reflection{
   display:flex;
   justify-content: center;
@@ -165,6 +166,7 @@ h1{
     
   height: 100px;
 }
+
 @media (max-width:1200px) {
   #about{
     box-sizing: border-box;
