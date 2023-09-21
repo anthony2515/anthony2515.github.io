@@ -37,7 +37,7 @@ function convert(number){
     return `${ones[Math.floor(number/100000)]} hundred ${convert(number%100000)}`
   }
   else{
-    return 'out of range'
+    return 'out of range Im still working on to convert more digits'
   }
 }
 
