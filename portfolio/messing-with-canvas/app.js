@@ -41,17 +41,21 @@ c.stroke()
 }*/
 
 //animation
+let x = Math.random()* window.innerWidth;
+let y = Math.random()* window.innerHeight;
 
-let x = 200
-let y = 200
 let dx =4 //x velocity or speed
-let dy = 2//y velocity or speed
-let radius = 30
+let dy =1//y velocity or speed
+let radius = 50
 function animate(){
   requestAnimationFrame(animate)//kaya tinawag yung function kas recursive xa
+ 
+  
   c.clearRect(0,0,innerWidth,innerHeight)//delete the previous circle
+ 
   c.beginPath()
   c.arc(x,y,radius,0,Math.PI*2,false)//
+  c.strokeStyle = "black"
   c.stroke()
  
   if(x + radius > innerWidth || x - radius < 0){//bounce back
