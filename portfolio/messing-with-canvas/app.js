@@ -39,24 +39,26 @@ c.arc(x,y,50,0,Math.PI*2,false)//
 c.strokeStyle = 'brown'
 c.stroke()
 }*/
-
+window.addEventListener('load',function(){
 //animation
 let x = Math.random()* window.innerWidth;
 let y = Math.random()* window.innerHeight;
 
-let dx =4 //x velocity or speed
+let dx =2 //x velocity or speed
 let dy =1//y velocity or speed
 let radius = 50
 function animate(){
-  requestAnimationFrame(animate)//kaya tinawag yung function kas recursive xa
+  window.requestAnimationFrame(animate)//kaya tinawag yung function kas recursive xa
  
   
   c.clearRect(0,0,innerWidth,innerHeight)//delete the previous circle
- 
+  c.fillStyle = 'pink'
   c.beginPath()
   c.arc(x,y,radius,0,Math.PI*2,false)//
   c.strokeStyle = "black"
   c.stroke()
+  c.fill()
+  
  
   if(x + radius > innerWidth || x - radius < 0){//bounce back
     dx = -dx
@@ -69,3 +71,5 @@ function animate(){
 }
 
 animate()
+
+})
