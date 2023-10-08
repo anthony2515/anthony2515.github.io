@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class = 'container'>
+    <h1>Task list</h1>
+    <button>Add task</button>
+    <div id = 'taskContainer' class = 'task_container'>
+      
+       
+
+    </div>
+
+  </div>
+  <div class="query invisible">
+    
+    <form>
+      <h1 id = 'warning'></h1>
+      <label for="title">Title (required)</label>
+      <input type="text" id = 'title'>
+      <label for="description">Description (optional)</label>
+      <textarea id="description" cols="30" rows="5" style = 'resize:none;display:block;'></textarea>
+      <fieldset>
+        <legend>Set duration?</legend>
+        <label for="yes">Yes</label>
+        <input type="radio" name="duration" id = "yes" value = 'yes' checked>
+        <label for="no">No</label>
+        <input type="radio" name = "duration" id = "no" value = "no">
+        <label class = 'date invisible' for="startDate">Start Date: </label>
+        <input class = 'date invisible'  type="date" id = 'startDate'>
+        <label class = 'date invisible'  for="dueDate">Due Date: </label>
+        <input class = 'date invisible'  type="date" id = 'dueDate'>
+      </fieldset>
+      <button id = 'add'>Add task</button>
+      <button id = 'cancel'>Cancel</button>
+    </form>
+  </div>
+  <script src = 'app.js'></script>
+</body>
+</html>

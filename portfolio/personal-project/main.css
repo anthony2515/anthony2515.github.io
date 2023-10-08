@@ -1,0 +1,123 @@
+.container{
+  display:flex;
+  flex-direction: column;
+  height:100vh;
+  align-items:center;
+  
+}
+button{
+  height:50px;
+  width:100px;
+  
+}
+.task_container{
+  border: 1px solid black;
+  width:100%;
+  height:100vh;
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  overflow: auto;
+}
+
+.invisible{
+  display:none;
+}
+.visible{
+  display:block;
+}
+fieldset{
+  width:100px;
+}
+
+
+.query{
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin: auto;
+  height:500px;
+  width:500px;
+  background-color: antiquewhite;
+  border:1px solid black;
+  
+}
+form{
+  padding:50px;
+}
+input{
+  display:block
+}
+input[type='radio']{
+  display:inline
+}
+td{
+  border:1px solid black;
+}
+
+.td_buttons{
+  display:flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height:100px;
+}
+#delete,#done{
+  height:20px;
+}
+
+.table{
+  
+  height:300px;
+  width:300px;
+  border:1px solid black;
+  margin: 10px;
+  border-radius: 20px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  
+}
+.textArea{
+ 
+  overflow: auto;
+  width: 250px;
+  height:100px;
+  display:block;
+  resize: none;
+  margin:auto;
+  border:none;
+  padding:10px;
+}
+
+.opacity{
+  opacity: 0;
+}
+
+.message{
+  position:relative;
+  top:-150px;
+  margin:auto;
+  width: 250px;
+  text-align: center;    
+}
+.date_start{
+  padding:0;
+  height:20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.marginBottom{
+  margin-bottom:10px;
+}
+.button_container{
+  display:flex;
+  width:200px;
+  
+}
+/*queryTitle.value
+  queryDesc.value
+  start.value
+  due.value
